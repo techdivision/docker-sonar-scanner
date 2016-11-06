@@ -1,0 +1,1 @@
+# docker-sonar-scanner
