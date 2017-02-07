@@ -1,7 +1,8 @@
 FROM java:8-alpine
 
 ENV SONAR_SCANNER_VERSION=2.8 \
-    SONAR_SCANNER_HOME=/opt/sonar-scanner
+    SONAR_SCANNER_HOME=/opt/sonar-scanner \
+    SONAR_SCANNER_OPTS="-Xmx512m"
 
 RUN set -x \
   # Install build depency
